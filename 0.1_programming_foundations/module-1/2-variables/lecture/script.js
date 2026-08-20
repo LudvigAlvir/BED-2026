@@ -24,7 +24,6 @@ age-- // same as: age = age -1
 console.log(age);
  */
 
-
 // let userFirstName = prompt("What is your name?")
 // console.log(userFirstName);
 
@@ -35,11 +34,8 @@ num2 = Number(num2);
 console.log(num1 + num2);
  */
 
-
-
-// TASK: print out the sum 
+// TASK: print out the sum
 // of both numbers in the console
-
 
 /* console.log(1 == "1"); // equal: true
 console.log(1==="1"); // strict equal: false
@@ -54,16 +50,14 @@ console.log("aksel" < "bjørnar"); // true
 console.log("aksel" < "Bjørnar"); // false
 // 0,1,2...A,B,C.... a,b,c */
 
-
 /* console.log(((1+1)<3) && 4<3);
 console.log(((1+1)<3) || 4<3);
  */
 
-
 let age = 18;
 
-if(age>=18){
-    console.log("you are an adult"); 
-} else{
-    console.log("You are a child");
+if (age >= 18) {
+  console.log("you are an adult");
+} else {
+  console.log("You are a child");
 }

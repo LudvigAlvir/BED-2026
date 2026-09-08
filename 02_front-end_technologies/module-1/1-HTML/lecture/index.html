@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture: HTML</title>
+    <style>
+      /*Selecting by CLASS*/
+      .text-green {
+        color: green;
+      }
+      /*Selecting by ID*/
+      #example {
+        background-color: blue;
+      }
+      /*Selecting by ELEMENT*/
+      div {
+        background-color: red;
+      }
+      #dog-pic {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--This is a comment -->
+    <header>
+      <nav id="main-nav"><a href="google.com">google</a></nav>
+    </header>
+    <h1 class="text-green">First HTML lecture</h1>
+    <p>This is for text</p>
+    <h1>First HTML lecture</h1>
+    <img
+      id="dog-pic"
+      src="https://i.guim.co.uk/img/media/fe1e34da640c5c56ed16f76ce6f994fa9343d09d/0_174_3408_2046/master/3408.jpg?width=1900&dpr=1&s=none&crop=none"
+    />
+    <br />
+    <!-- Attriutes -->
+    <div id="example" class="">example div</div>
+    <div class="">example div without id</div>
+    <!-- Absolute image -->
+    <img src="/media/elvis.jpg" alt="" />
+    <!-- realtive image -->
+    <img src="./media/elvis.jpg" alt="" />
+    <!--External image-->
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Juliet_Prowse-Elvis_Presley_in_G.I._Blues.jpg/250px-Juliet_Prowse-Elvis_Presley_in_G.I._Blues.jpg?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+      alt=""
+    />
+    <footer></footer>
+  </body>
+</html>

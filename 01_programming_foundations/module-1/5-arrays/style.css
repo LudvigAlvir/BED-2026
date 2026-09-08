@@ -1,0 +1,12 @@
+img {
+  margin-top: -60px;
+  max-width: 100%;
+}
+.img-container {
+  height: 120px;
+  overflow-y: hidden;
+}
+.card {
+  border: 2px solid black;
+  width: 250px;
+}

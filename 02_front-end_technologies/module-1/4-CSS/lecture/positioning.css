@@ -1,0 +1,38 @@
+p {
+  font-size: 200%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 32px;
+}
+
+.dog-img {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.relative {
+  position: relative;
+}
+.text-white {
+  color: white;
+}
+.right {
+  right: 0;
+}
+
+.container {
+  margin-top: 200px;
+  position: relative;
+}
+ul {
+  position: absolute;
+}
+.float-container {
+  margin-top: 350px;
+}
+.float-img {
+  width: 50%;
+  float: left;
+}

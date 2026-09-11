@@ -1,0 +1,27 @@
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.purple {
+  background-color: purple;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+
+  /*Another way to make them be on the same line*/
+  /* display: inline-block;*/
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: 97vh;
+}

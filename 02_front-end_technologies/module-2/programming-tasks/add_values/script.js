@@ -15,8 +15,6 @@ What do we need to do?
     - Change values to numbers
     - add values together
     - display values
-
-
 */
 const btn = document.querySelector("#btn-add");
 btn.addEventListener("click", () => {

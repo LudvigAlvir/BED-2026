@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aqua;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.done{
+    text-decoration: line-through;
+}

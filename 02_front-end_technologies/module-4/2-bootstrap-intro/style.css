@@ -1,0 +1,12 @@
+.item-1 {
+  background-color: purple;
+  color: white;
+}
+.item-2 {
+  background-color: chocolate !important;
+  color: white !important;
+}
+
+.purple-hover:hover {
+  background-color: purple !important;
+}

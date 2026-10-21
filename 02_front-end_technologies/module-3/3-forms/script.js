@@ -36,9 +36,14 @@ form.addEventListener("submit", (event) => {
 /*
  All eventlisteneres has an "event" that can be passed into the function
 */
-/* document.addEventListener("click", (e) => {
+/*
+
+  document.addEventListener("click", (e) => {
   console.log(e);
   console.log(e.target);
   e.target.classList.toggle("blue");
 });
- */
+
+*/
+
+

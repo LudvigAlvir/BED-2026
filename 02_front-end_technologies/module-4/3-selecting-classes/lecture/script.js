@@ -17,14 +17,14 @@ pokemons.forEach((pokemon) => {
   // Write here!
   const pokemonContainer = document.querySelector("#pokemon-container");
   pokemonContainer.innerHTML += `
-  <div class="card" style="width: 18rem;">
+<div class="card" style="width: 18rem;">
   <img src="https://static.wikia.nocookie.net/pokemon-fano/images/6/6f/Poke_Ball.png/revision/latest?cb=20140520015336" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${pokemon}</h5>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-  `;
+`;
 });
 // do something with the container for each pokemon
 

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo with classes</title>
+  </head>
+  <body>
+    <h2>What do we need to have a good todo app</h2>
+    <h3>(What we need to have on the website, not code)</h3>
+    <ul>
+      <li>Users MUST be able to add items to the list</li>
+      <li>Users SHOULD be able to remove items from the list</li>
+      <li>Users MUST be able to mark items as done</li>
+      <li>Users SHOULD be able to edit items</li>
+      <li>Items MUST persist between page visits</li>
+      <li>Users SHOULD be able to filter items</li>
+      <li>Users SHOULD be able to clear the list</li>
+      <li>COULD have positive feedback when all items are done</li>
+    </ul>
+
+    <h3>How do we achieve this? technical explanations</h3>
+    <h4>Structure (HTML)</h4>
+    <ul>
+      <li>Form for adding new items</li>
+      <li>Unordered list of items (container for items)</li>
+    </ul>
+    <h4>Implementation (js)</h4>
+    <ul>
+      <li>
+        List items class
+        <ul>
+          <li>id</li>
+          <li>title</li>
+          <li>description</li>
+          <li>status</li>
+        </ul>
+      </li>
+      <li>
+        list class
+        <ul>
+          <li>data: array(list items)</li>
+          <li>add: method for adding items</li>
+          <li>remove: method for removing an item</li>
+          <li>changeItem: method for changing status of item</li>
+          <li>clear: method for emptying the list</li>
+          <li>save: method for persisting list</li>
+        </ul>
+      </li>
+      <li>load items: load saved items</li>
+      <li>display list, function for showing it on the web page</li>
+    </ul>
+
+    <div style="border: 1px solid black">
+      <h3>Item title</h3>
+      <p>Item content</p>
+    </div>
+    <ul>
+      <li>Item content</li>
+    </ul>
+  </body>
+</html>

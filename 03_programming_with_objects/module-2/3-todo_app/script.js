@@ -34,9 +34,27 @@ form.addEventListener("submit", (e) => {
 function displayItems() {
   const container = document.querySelector("#container-items");
   container.innerHTML = "";
-  const div = document.createElement("div");
-  div.textContent = "This div is created in JavaScript";
-  container.append(div);
+
+  todoList.data.forEach((item) => {
+    const card = document.createElement("div");
+    card.classList.add("card", "mt-4");
+    card.style.maxWidth = "500px";
+
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
+
+    const cardTitle = document.createElement("h5");
+    cardTitle.classList.add("card-title");
+    cardTitle.textContent = item.title;
+
+    const cardText = document.createElement("p");
+    cardText.classList.add("card-text");
+    cardText.textContent = item.description;
+
+    cardBody.append(cardTitle, cardText);
+    card.append(cardBody);
+    container.append(card);
+  });
 }
 displayItems();
 

@@ -29,6 +29,7 @@ form.addEventListener("submit", (e) => {
   const title = document.querySelector("#input-title").value;
   const description = document.querySelector("#input-description").value;
   todoList.add(title, description);
+  displayItems();
 });
 
 function displayItems() {
@@ -39,6 +40,9 @@ function displayItems() {
     const card = document.createElement("div");
     card.classList.add("card", "mt-4");
     card.style.maxWidth = "500px";
+    if (item.status == "done") {
+      card.classList.add("bg-secondary");
+    }
 
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
@@ -51,7 +55,25 @@ function displayItems() {
     cardText.classList.add("card-text");
     cardText.textContent = item.description;
 
-    cardBody.append(cardTitle, cardText);
+    const btnDone = document.createElement("button");
+    btnDone.classList.add("btn");
+    if (item.status == "active") {
+      btnDone.classList.add("btn-success");
+    } else {
+      btnDone.classList.add("btn-light");
+    }
+    btnDone.textContent = item.status;
+    btnDone.addEventListener("click", () => {
+      if (item.status == "done") {
+        item.status = "active";
+      } else {
+        item.status = "done";
+      }
+
+      displayItems();
+    });
+
+    cardBody.append(cardTitle, cardText, btnDone);
     card.append(cardBody);
     container.append(card);
   });

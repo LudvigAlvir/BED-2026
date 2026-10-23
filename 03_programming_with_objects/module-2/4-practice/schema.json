@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "size": {
+            "type": "number"
+        },
+        "color": {
+            "type": "string"
+        },
+        "price": {
+            "type": "number",
+            "minimum": 0
+        }
+    },
+    "required": [
+        "name",
+        "size",
+        "price"
+    ]
+}

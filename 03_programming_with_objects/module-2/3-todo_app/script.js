@@ -1,27 +1,43 @@
 class TodoList {
-  example = "example value"; // can put properties here
   constructor() {
     this.data = [];
+    const localData = localStorage.getItem("todo-list");
+    if (localData) {
+      const data = JSON.parse(localData);
+      data.forEach((item) => {
+        const todoItem = new TodoItem(
+          item.title,
+          item.description,
+          item.id,
+          item.status,
+        );
+        this.data.push(todoItem);
+      });
+    }
   }
   add(title, description) {
-    const item = new TodoItem(title, description);
+    const item = new TodoItem(
+      title,
+      description,
+      this.data[this.data.length - 1] + 1,
+    );
     this.data.push(item);
+  }
+  save() {
+    localStorage.setItem("todo-list", JSON.stringify(this.data));
   }
 }
 
-let currentId = 0;
 class TodoItem {
-  constructor(title, description) {
-    currentId++;
-    this.id = currentId;
+  constructor(title, description, id, status = "active") {
+    this.id = id;
     this.title = title;
     this.description = description;
-    this.status = "active"; // active | done
+    this.status = status; // active | done
   }
 }
 
 const todoList = new TodoList();
-todoList.add("first", "first todo item");
 
 const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
@@ -79,6 +95,10 @@ function displayItems() {
   });
 }
 displayItems();
+
+document.querySelector("#btn-save").addEventListener("click", () => {
+  todoList.save();
+});
 
 /* 
 const data = JSON.parse(localStorage.getItem("todo"));

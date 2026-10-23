@@ -37,9 +37,7 @@ class WishList {
 }
 const wishList = new WishList();
 wishList.addItem("ps5");
-
 console.log(wishList);
-
 const wishList2 = new WishList();
 wishList2.addItem("xbox");
 
